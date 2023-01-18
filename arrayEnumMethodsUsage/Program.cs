@@ -30,6 +30,30 @@ namespace arrayEnumMethodsUsage
             today = daysOfWeek.tuesday;
 
             Console.WriteLine(today.ToString());
+
+            Console.WriteLine("Method 1");
+            countTen();
+
+            Console.WriteLine("Method 2");
+            countNumbers(5);
+
+        }
+
+        //Methods in C#
+        static void countTen()
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(i.ToString());
+            }
+        }
+
+        static void countNumbers(int numberToCountTo)
+        {
+            for(int j = 1; j <= numberToCountTo; j++) 
+            {
+                Console.WriteLine(j.ToString());
+            }
         }
     }
 }
