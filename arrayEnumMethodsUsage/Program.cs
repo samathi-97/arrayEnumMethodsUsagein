@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace arrayEnumMethodsUsage
 {
+
+    enum daysOfWeek { sunday,monday,tuesday};
     internal class Program
     {
         static void Main(string[] args)
@@ -16,12 +18,18 @@ namespace arrayEnumMethodsUsage
             //find min value
             for(int index = 0 ; index < arr1.Length; index++) 
             {
-             if (arr1[index] < currentMinimumValue)
+                if (arr1[index] < currentMinimumValue)
                 {
                  currentMinimumValue= arr1[index];
                 }
             }
             Console.WriteLine(currentMinimumValue.ToString());
+
+            daysOfWeek today;
+
+            today = daysOfWeek.tuesday;
+
+            Console.WriteLine(today.ToString());
         }
     }
 }
