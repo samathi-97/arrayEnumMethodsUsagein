@@ -37,6 +37,14 @@ namespace arrayEnumMethodsUsage
             Console.WriteLine("Method 2");
             countNumbers(5);
 
+            //working with existing classes
+            Random r = new Random();
+            int arandomNumber = r.Next();
+            Console.WriteLine("Random Number is : "+arandomNumber.ToString());
+
+            int dieRoll = r.Next(6) +1;
+            Console.WriteLine("dice roll : "+dieRoll.ToString());
+
         }
 
         //Methods in C#
@@ -48,6 +56,12 @@ namespace arrayEnumMethodsUsage
             }
         }
 
+        //Methods with parameters
+        // you can add /// then haveXML documentation comments.
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="numberToCountTo">Number to count</param>
         static void countNumbers(int numberToCountTo)
         {
             for(int j = 1; j <= numberToCountTo; j++) 
